@@ -31,3 +31,10 @@ body {
   padding-top: 10px;
   color: #D3D3D3;
 }
+
+.motto-content{
+  width: 20px;
+  color: #548B54;
+  font-size: 18px;
+  line-height: 1.2;
+}

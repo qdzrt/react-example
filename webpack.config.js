@@ -9,7 +9,7 @@ var webpack = require('webpack');
 var config ={
   entry: [
     './app/bundles/startup/main.js',
-    './app/bundles/startup/see.js',
+    './app/bundles/startup/MottoApp.js',
   ],
 
   output: {
