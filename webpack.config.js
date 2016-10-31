@@ -1,15 +1,9 @@
 var path = require('path');
 var webpack = require('webpack');
 
-// entry: {
-//   main: path.resolve(__dirname,'./app/bundles/startup/main.js'),
-//       see: path.resolve(__dirname,'./app/bundles/startup/see.js'),
-// },
-
 var config ={
   entry: [
-    './app/bundles/startup/main.js',
-    './app/bundles/startup/MottoApp.js',
+    './app/index.js',
   ],
 
   output: {
@@ -19,7 +13,7 @@ var config ={
   },
 
   resolve: {
-    extensions: ['','.js','.jsx'],
+    extensions: ['','.js','.jsx','.scss'],
     modulesDirectories: [
       'node_modules'
     ]

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid,Row,Col, FormControl } from 'react-bootstrap';
-import Motto from '../components/Motto';
+import Motto from '../components/motto/Motto';
 
 class MottoContainer extends React.Component{
   constructor(){
@@ -24,14 +24,12 @@ class MottoContainer extends React.Component{
   render() {
     const mottoJap = this.state.mottoJap;
     const mottoChina = this.state.mottoChina;
-    const expression = this.state.expression;
-    const liked = this.state.liked ? mottoChina : mottoJap;
 
     return (
       <div>
         <Motto
-          myExp={expression}
-          myMotto={liked}
+          myExp={this.state.expression}
+          myMotto={this.state.liked ? mottoChina : mottoJap}
           updateExpression={this.handleExpChange}
           switchMotto={this.toggleChange}
         />

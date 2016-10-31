@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid,Row,Col, FormControl } from 'react-bootstrap';
 
-class Motto extends React.Component{
+class Motto extends React.Component {
   render() {
     return (
       <Grid>
