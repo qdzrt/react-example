@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --progress --colors --hot",
+    "start": "webpack-dev-server --history-api-fallback --progress --colors --hot",
     "build": "./node_modules/.bin/webpack"
   },
   "author": "",
