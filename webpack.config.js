@@ -21,9 +21,10 @@ var config ={
   resolveLoader: {
     root: path.join(__dirname, 'node_modules')
   },
+
   devServer: {
     inline: true,
-    port: 5001
+    port: 5001,
   },
  
   module: {

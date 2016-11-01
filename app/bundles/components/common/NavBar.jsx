@@ -1,25 +1,27 @@
 import React from 'react';
-import { Navbar, Nav, NavItem, Collapse } from 'react-bootstrap';
+import { Link } from 'react-router';
+import NavItems from './NavItem';
+import { Navbar,NavItem, Nav, Collapse } from 'react-bootstrap';
 
 class NavBar extends React.Component {
   constructor() {
     super();
     this.state = {
       navItems: [
-        { text: 'Home', href: '/home' },
-        { text: 'About', href: '/about' },
-        { text: 'Motto', href: '/motto' },
+        { text: "Home", to: "/home" },
+        { text: "About", to: "/about" },
+        { text: "Motto", to: "/motto" },
       ]
     }
   }
   render() {
     const { navItems } = this.state;
-    const navItemsComponents = navItems.map((props, index) => <NavItem eventKey={index} href={props.href}>{props.text}</NavItem>);
+    const navItemsComponents = navItems.map((props, index) => <NavItems key={index} {...props}/>);
     return (
-        <Navbar inverse collapseOnSelect>
+        <Navbar inverse >
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#">Lotu</a>
+              <Link to="#">Lotu</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
