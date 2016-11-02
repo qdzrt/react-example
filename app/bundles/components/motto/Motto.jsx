@@ -10,7 +10,7 @@ class Motto extends React.Component{
       expression: 'Sweet',
       mottoJap: '桜があんなに洁く散るのは来年も咲くのわかってるからだよ',
       mottoChina: '樱花这么毅然飘散是因为她知道明年还会再开'
-    }
+    };
   }
 
   toggleChange(){
@@ -34,8 +34,8 @@ class Motto extends React.Component{
                   <MottoBox
                     myExp={this.state.expression}
                     myMotto={this.state.liked ? mottoChina : mottoJap}
-                    updateExpression={this.handleExpChange}
-                    switchMotto={this.toggleChange}
+                    updateExpression={this.handleExpChange.bind(this)}
+                    switchMotto={this.toggleChange.bind(this)}
                   />
                 </div>
               </Col>
