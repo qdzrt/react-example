@@ -8,7 +8,7 @@ class MottoBox extends React.Component {
       <Grid>
         <Row>
           <Col md={6}>
-            <div className="motto-content" onClick={switchMotto}>{myMotto}</div>
+            <div className="motto" onClick={switchMotto}>{myMotto}</div>
           </Col>
           <Col md={3}>
             <div>

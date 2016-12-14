@@ -8,7 +8,7 @@ class Root extends React.Component {
     return (
       <div>
         <HeaderContainer />
-        <main className="main-container">
+        <main className="main">
           {this.props.children}
         </main>
         <Footer />

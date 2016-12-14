@@ -8,7 +8,7 @@ class NavBar extends React.Component {
     super();
     this.state = {
       navItems: [
-        { text: "Home", to: "/home" },
+        { text: "Home", to: "/" },
         { text: "About", to: "/about" },
         { text: "Motto", to: "/motto" },
       ]
@@ -16,25 +16,27 @@ class NavBar extends React.Component {
   }
   render() {
     const { navItems } = this.state;
+    // forEach(no return value) vs map(have a return value)
+    // use es6 rest parameter 不定参数
     const navItemsComponents = navItems.map((props, index) => <NavItems key={index} {...props}/>);
     return (
-        <Navbar inverse >
-          <Navbar.Header>
-            <Navbar.Brand>
-              <Link to="#">Lotu</Link>
-            </Navbar.Brand>
-            <Navbar.Toggle />
-          </Navbar.Header>
-          <Navbar.Collapse>
-            <Nav>
-              { navItemsComponents }
-            </Nav>
-            <Nav pullRight>
-              <NavItem eventKey={0} href="#">Sign in</NavItem>
-              <NavItem eventKey={1} href="#">Sign up</NavItem>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
+      <Navbar inverse >
+        <Navbar.Header>
+          <Navbar.Brand>
+            <Link to="#">Lotu</Link>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+        </Navbar.Header>
+        <Navbar.Collapse className="font">
+          <Nav>
+            { navItemsComponents }
+          </Nav>
+          <Nav pullRight>
+            <NavItem eventKey={0} href="#">Sign in</NavItem>
+            <NavItem eventKey={1} href="#">Sign up</NavItem>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
 
   )
   }

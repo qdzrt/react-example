@@ -2,8 +2,9 @@ import React from 'react';
 
 class Header extends React.Component {
   render() {
+    // child components
     return (
-      <header className="black-bg">
+      <header>
         {this.props.children}
       </header>
     )

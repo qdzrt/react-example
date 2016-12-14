@@ -23,6 +23,7 @@ class Motto extends React.Component{
   }
 
   render() {
+    // use es6 destructuring
     const { mottoJap, mottoChina, expression, liked } = this.state;
     return (
         <section>

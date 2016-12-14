@@ -10,8 +10,7 @@ import Motto from '../components/motto/Motto';
 const ROUTES =(
   <Router history={browserHistory}>
     <Route path="/" component={Root}>
-      <IndexRoute component={About} />
-      <Route path="/home" component={Home} />
+      <IndexRoute component={Home} />
       <Route path="/about" component={About} />
       <Route path="/motto" component={Motto} />
     </Route>

@@ -5,12 +5,11 @@ import classNames from 'classnames';
 class NavItems extends React.Component {
   render() {
     const navClass = classNames({
-      'nav-item': true,
-      'active': this.props.isActive,
+      'navbar-item': true,
     });
     return (
       <li role="presentation">
-        <Link className={navClass} to={this.props.to} activeClassName="active">{this.props.text}</Link>
+        <Link className={navClass} activeClassName="active" to={this.props.to}>{this.props.text}</Link>
       </li>
     )
   }
