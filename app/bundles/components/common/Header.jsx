@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { Component, Children } from 'react';
 
-class Header extends React.Component {
+class Header extends Component {
   render() {
-    // child components
+    // Three possible values of this.props.children
+    // undefined(No child nodes)、object(A child node)、array(Multiple child nodes)
     return (
       <header>
-        {this.props.children}
+        {Children.map(this.props.children, (child)=> <div>{child}</div>)}
       </header>
     )
   }
