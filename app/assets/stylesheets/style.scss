@@ -1,7 +1,6 @@
 /*body*/
 body {
   min-height: 910px;
-  color: #333333;
   font-size: 14px;
   font-family: "microsoft yahei";
   background-color: aliceblue;
@@ -20,11 +19,15 @@ body {
 .navbar-inverse {
   background-color: #000000;
 }
-.navbar-item {
-  color: white;
+.navbar-inverse .navbar-brand {
+  color: #fafafa;
 }
 .nav.navbar-nav li a {
   color: gainsboro;
+}
+.nav.navbar-nav li a:focus {
+  color: #fafafa;
+  background: #333333 ;
 }
 
 /*main*/
@@ -66,6 +69,10 @@ body {
 }
 
 /*common*/
+.brand-active {
+  position: relative;
+  color: #fafafa;
+}
 .active {
   position: relative;
   color: #fafafa;
