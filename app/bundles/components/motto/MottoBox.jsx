@@ -3,7 +3,7 @@ import { Grid,Row,Col, FormControl } from 'react-bootstrap';
 
 class MottoBox extends React.Component {
   render() {
-    const { switchMotto, myMotto, myExp, updateExpression } = this.props;
+    const { switchMotto, myMotto, myExp, updateExpression, users } = this.props;
     return (
       <Grid>
         <Row>
@@ -19,6 +19,7 @@ class MottoBox extends React.Component {
                 onChange={updateExpression}
               />
             </div>
+            <div>{users}</div>
           </Col>
         </Row>
       </Grid>
