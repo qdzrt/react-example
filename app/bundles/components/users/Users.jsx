@@ -8,17 +8,14 @@ export default class User extends Component {
   constructor(props){
     super(props);
       this.state = {
-      users: []
+        userUrl: 'http://0.0.0.0:3000/api/v1/users',
+        users: []
     }
   }
 
   componentDidMount(){
-    fetch('http://0.0.0.0:3000/api/v1/users', {
-      method: 'GET',
-      headers: {
-        'X-Lian-H': 'api_test'
-      }
-    })
+    const { userUrl } = this.state
+    fetch(userUrl)
     .then(response=>{
       return response.json()
     })
