@@ -42,14 +42,18 @@ body {
   font-size: 20px;
   background-color: #ffffff;
   padding: 10px;
+  min-height: 150px;
 }
 .motto{
-  width: 20px;
   color: #548B54;
   font-size: 18px;
   line-height: 1.2;
+  margin-top: 20px;
 }
-
+.item-m {
+  margin-top: 20px;
+  font-size: 13px;
+}
 /*footer*/
 .footer {
   //position: fixed;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { IndexLink, Link } from 'react-router';
+import { IndexLink } from 'react-router';
 import NavItems from './NavItem';
 import { Navbar,NavItem, Nav, Collapse } from 'react-bootstrap';
 
@@ -11,6 +11,7 @@ class NavBar extends React.Component {
         { text: "Home", to: "/home" },
         { text: "About", to: "/about" },
         { text: "Motto", to: "/motto" },
+        { text: "Users", to: "/users" },
       ]
     }
   }

@@ -6,6 +6,7 @@ import Root from './Root';
 import Home from '../components/home/Home';
 import About from '../components/about/About';
 import Motto from '../components/motto/Motto';
+import Users from '../components/users/Users';
 import Welcome from '../components/welcome/Welcome';
 
 const ROUTES =(
@@ -15,6 +16,7 @@ const ROUTES =(
       <Route path="/home" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/motto" component={Motto} />
+      <Route path="/users" component={Users} />
     </Route>
   </Router>
 );

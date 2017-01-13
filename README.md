@@ -1,17 +1,10 @@
 # react-example
 React + Webpack + Babel + React-Router
 
+* npm install
 
-#### Issue record:
-1. Refreshing page gives Cannot GET /page_url in react-router 2.
- 
-* Configuring your Webpack server to expect the routes
-```js
- devServer: {
-    contentBase: './',
-    historyApiFallback: true
-  };
-```
-* Can also be set from CLI with the flag --history-api-fallback.
+* npm start. 访问地址：http://localhost:5001
 
-[see Resources](http://stackoverflow.com/questions/27928372/react-router-urls-dont-work-when-refreshing-or-writting-manually)
+#### User module
+这个模块是使用rails 5 api和react结合的前后端分离的模式,ruby on rails[项目地址](https://github.com/qdzrt/only_api)
+所以要查看此模块，需要把rails项目clone下来

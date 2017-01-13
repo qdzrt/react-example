@@ -1,16 +1,14 @@
-import React from 'react';
-import { Grid,Row,Col,  } from 'react-bootstrap';
+import React, { Component } from 'react';
+import { Grid,Row,Col } from 'react-bootstrap';
 
-class BoxTwo extends React.Component {
+export default class BoxTwo extends Component {
   render() {
-    const img = require("./new1.jpg");
     return (
       <Grid>
         <Row>
           <Col md={12}>
-            <div className="box-item container-img">
-              <div>男童为救白血病父亲暴饮暴食>男童为救白血病父亲暴饮暴食：要再给我爸一条命</div><br/>
-              <img src={img}/>
+            <div className="box-item">
+              <div>add content here</div>
             </div>
           </Col>
         </Row>
@@ -18,5 +16,3 @@ class BoxTwo extends React.Component {
     )
   }
 }
-
-export default BoxTwo;
